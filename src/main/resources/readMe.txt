@@ -1,0 +1,1 @@
+wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
