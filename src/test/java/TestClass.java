@@ -12,8 +12,20 @@ public class TestClass {
         String[] words={"Hello", "hEllo", "heLlo", "helLo", "hellO"};
         assertArrayEquals( words,main.wave("hello"));
     }
+    
 
+    @Test
+    public void testMainWithGap(){
+        Main main = new Main();
+        String[] words={"Gap ", "gAp ", "gaP "};
+        assertArrayEquals( words,main.wave("gap "));
+    }
 
-
+    @Test
+    public void testMainWithGapInside(){
+        Main main = new Main();
+        String[] words={"G ap", "g Ap", "g aP"};
+        assertArrayEquals( words,main.wave("g ap"));
+    }
 
 }
